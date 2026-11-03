@@ -10,7 +10,7 @@
    "license": "MIT",
    "author": "Vathala Team",
    "scripts": {
-      "build": "node node_modules/react-scripts/bin/react-scripts build",
+      "build": "react-scripts build",
       "changelog": "auto-changelog --starting-version 4.1.0 --commit-limit false --hide-credit",
       "eject": "node node_modules/react-scripts/bin/react-scripts eject",
       "lint": "eslint \"src/**/*.js\"",
