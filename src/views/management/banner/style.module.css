@@ -7,13 +7,13 @@
 }
 
 .acceptCta{
-    background-image: linear-gradient(to right,#e4c87f,#c19647);
+    background-image: linear-gradient(to right,var(--curoaid-cyan-dark),var(--curoaid-green-dark));
     text-transform: none !important ;
     
 }
 
 .selected{
-    background: transparent linear-gradient(106deg, #E4C87F 0%, #C19647 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(106deg, var(--curoaid-cyan-dark) 0%, var(--curoaid-green-dark) 100%) 0% 0% no-repeat padding-box;
     width: 160px;
     border-radius: 2px;
     font-family: 'Montserrat', sans-serif;
@@ -27,7 +27,7 @@
 
 .unselected{
     width: 160px;
-    background: #006D5B;
+    background: var(--curoaid-cyan);
     border-radius: 2px;
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
@@ -47,10 +47,10 @@
 
 .rejectCta{
     background: #ffffff 0% 0% no-repeat padding-box !important ;
-    border: 1px solid #c19647 !important ;
+    border: 1px solid var(--curoaid-green-dark) !important ;
     text-transform: none !important ;
     border-radius: 7px !important;
-    color: #c19647 !important ;
+    color: var(--curoaid-green-dark) !important ;
 }
 
 .modalConCta{
@@ -59,4 +59,3 @@
     width: 45%;
     margin: 10px auto;
 }
-

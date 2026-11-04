@@ -1,15 +1,9 @@
-import React from 'react'
-
-
-import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { CSidebar, CSidebarBrand, CSidebarNav } from '@coreui/react'
 
 import { AppSidebarNav } from './AppSidebarNav'
 
-import { logoNegative } from 'src/assets/brand/logo-negative'
-import { sygnet } from 'src/assets/brand/sygnet'
-import Logo from "src/assets/images/logo.png"
-import "./style.css"
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
 
@@ -19,31 +13,39 @@ import { useGlobalStore } from 'src/utils/store'
 
 const AppSidebar = () => {
 
-  const {sidebarShow} = useGlobalStore((state) => state)
+  const { sidebarShow, setSidebarVisible } = useGlobalStore((state) => state)
+  const location = useLocation()
 
+  useEffect(() => {
+    const mobileQuery = window.matchMedia('(max-width: 767.98px)')
+    const closeOnMobile = () => {
+      if (mobileQuery.matches) {
+        setSidebarVisible(false)
+      }
+    }
+
+    closeOnMobile()
+    mobileQuery.addEventListener('change', closeOnMobile)
+
+    return () => mobileQuery.removeEventListener('change', closeOnMobile)
+  }, [location.pathname, setSidebarVisible])
 
   return (
     <CSidebar
+      className="app-sidebar"
       position="fixed"
       unfoldable={false}
       visible={sidebarShow}
-      style={{backgroundImage: "linear-gradient(#006D5B,#033639)"}}
-      onVisibleChange={(visible) => {
-        console.log(visible,"visible");
-      }}
+      onVisibleChange={setSidebarVisible}
     >
-      <CSidebarBrand className="d-none d-md-flex" to="/">
-       <img src={Logo} style={{width:"62%"}} />
+      <CSidebarBrand className="app-sidebar-brand" to="/">
+       <span className="app-brand-wordmark">CuroAid</span>
       </CSidebarBrand>
-      <CSidebarNav className='sidebar-nav' >
+      <CSidebarNav className="sidebar-nav">
         <SimpleBar>
           <AppSidebarNav items={Nav()} />
         </SimpleBar>
       </CSidebarNav>
-      {/* <CSidebarToggler
-        className="d-none d-lg-flex"
-        onClick={() => dispatch({ type: 'set', sidebarUnfoldable: !unfoldable })}
-      /> */}
     </CSidebar>
   )
 }

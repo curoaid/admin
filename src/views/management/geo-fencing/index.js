@@ -370,7 +370,7 @@ function Index({ show }) {
                                           <BiEdit
                                              style={{
                                                 fontSize: '30px',
-                                                color: '#006d5b',
+                                                color: 'var(--curoaid-cyan-dark)',
                                                 cursor: 'pointer',
                                              }}
                                              onClick={() => {

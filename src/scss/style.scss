@@ -1,6 +1,9 @@
 // If you want to override variables do it here
 @import "variables";
 
+$primary: #006D5B;
+$success: #033639;
+$link-color: #006D5B;
 $enable-ltr: true;
 $enable-rtl: true;
 
@@ -27,7 +30,7 @@ font-family: Roboto,"Helvetica Neue",sans-serif !important  ;
 }
 
 .bdc-container{
-    background: transparent linear-gradient(96deg, #006D5B 0%, #02565d 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(96deg, var(--curoaid-cyan) 0%, var(--curoaid-green) 100%);
     padding: 18px 6px;
     margin: -15px -27px 20px;
     color: white;
@@ -39,7 +42,7 @@ font-family: Roboto,"Helvetica Neue",sans-serif !important  ;
 }
 
 .bdc-container-content{
-    background: transparent linear-gradient(96deg, #006D5B 0%, #02565d 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(96deg, var(--curoaid-cyan) 0%, var(--curoaid-green) 100%);
     padding: 17px 35px;
     margin: -15px -27px 20px;
     color: white;

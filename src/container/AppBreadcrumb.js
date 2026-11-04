@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import routes from '../routes'
-import "./style.css"
 
 import { CBreadcrumb, CBreadcrumbItem } from '@coreui/react'
 

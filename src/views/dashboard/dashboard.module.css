@@ -8,9 +8,57 @@
 .cardContent{
     border-radius: 5px;
     background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0 2px 5px -1px grey;
+    box-shadow: 0 3px 14px rgba(20, 52, 88, 0.08);
     height: 100%;
     text-align: center;
-    width: 32%;
+    width: calc(33.333% - 12px);
     margin-bottom: 15px;
+}
+
+.chartRow {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.chartCard {
+    grid-column: span 1;
+    min-width: 0;
+    min-height: 300px;
+    padding: 12px;
+}
+
+.chartCardWide {
+    grid-column: span 2;
+}
+
+@media (max-width: 991.98px) {
+    .cardContent {
+        width: calc(50% - 8px);
+    }
+
+    .chartRow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .chartCardWide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .cardContent {
+        width: 100%;
+    }
+
+    .chartRow {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .chartCard,
+    .chartCardWide {
+        grid-column: span 1;
+        min-height: 250px;
+    }
 }

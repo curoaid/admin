@@ -98,7 +98,7 @@ function Dashboard({ show }) {
                data.onGoingOrder || 0,
                data.cancelledOrder || 0,
             ],
-            backgroundColor: "rgba(2, 136, 91, 0.95)",
+            backgroundColor: "#006D5B",
          },
       ],
    };
@@ -108,7 +108,7 @@ function Dashboard({ show }) {
          {
             label: "User Data",
             data: [data.totalUser || 0, data.deletedUsersCount || 0], // Replace 'value' with the actual property you want to chart
-            backgroundColor: ["rgba(2, 136, 91, 0.95)", "red"],
+            backgroundColor: ["#006D5B", "#d9534f"],
          },
       ],
    };
@@ -162,7 +162,7 @@ function Dashboard({ show }) {
          {
             label: "User Data",
             data: [data.totalProvider || 0, data.deletedStaffCount || 0], // Replace 'value' with the actual property you want to chart
-            backgroundColor: ["rgba(2, 136, 91, 0.95)", "red"],
+            backgroundColor: ["#006D5B", "#033639"],
          },
       ],
    };
@@ -189,20 +189,20 @@ function Dashboard({ show }) {
                   />
                </div>
             </div>
-            <div className=' d-flex  mb-4' style={{ height: "300px" }}>
-               <div className='col-3 border p-2 card justify-content-center align-items-center' >
+            <div className={`${styles.chartRow} mb-4`}>
+               <div className={`${styles.chartCard} card justify-content-center align-items-center`}>
                   <Pie
                      data={userChartData}
                      options={options}
                   />
                </div>
-               <div className='col-3 border p-2 card justify-content-center align-items-center' >
+               <div className={`${styles.chartCard} card justify-content-center align-items-center`}>
                   <Doughnut
                      data={staffChartData}
                      options={options}
                   />
                </div>
-               <div className='col-6 border p-2 card justify-content-center align-items-center' >
+               <div className={`${styles.chartCard} ${styles.chartCardWide} card justify-content-center align-items-center`}>
                   <Bar
                      data={userChartData}
                      options={options}

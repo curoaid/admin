@@ -62,7 +62,7 @@ const ResetPassword = () => {
   }
 
   return (
-    <div className="min-vh-100 d-flex flex-row align-items-center" style={{backgroundImage:"linear-gradient(#006D5B,#033639)"}} >
+    <div className="min-vh-100 d-flex flex-row align-items-center auth-page" >
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={5}>

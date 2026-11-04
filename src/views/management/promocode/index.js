@@ -212,7 +212,7 @@ function Index({ show }) {
 
                   {!show && <TableCell align="center" style={{ minWidth: "200px" }} >
                     <div className={styles.actionCta} >
-                      <BiEdit style={{ fontSize: "30px", color: "#006d5b", cursor: "pointer" }} onClick={() => {
+                      <BiEdit style={{ fontSize: "30px", color: "var(--curoaid-cyan-dark)", cursor: "pointer" }} onClick={() => {
                         setDetailPopup(row?._id)
                         setPrefillDetails({
                           title: row?.title,

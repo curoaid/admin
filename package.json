@@ -1,14 +1,14 @@
 {
-   "name": "Vathala",
+   "name": "curoaid-admin",
    "version": "4.3.0",
-   "description": "CoreUI Free React Admin Template",
-   "homepage": "http://192.168.0.109:3001/",
+   "description": "CuroAid Admin",
+   "homepage": "/",
    "repository": {
       "type": "git",
       "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
    },
    "license": "MIT",
-   "author": "Vathala Team",
+   "author": "CuroAid Team",
    "scripts": {
       "build": "react-scripts build",
       "changelog": "auto-changelog --starting-version 4.1.0 --commit-limit false --hide-credit",

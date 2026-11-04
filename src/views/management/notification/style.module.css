@@ -8,7 +8,7 @@
 }
 
 .acceptCta{
-    background-image: linear-gradient(to right,#e4c87f,#c19647);
+    background-image: linear-gradient(to right,var(--curoaid-cyan-dark),var(--curoaid-green-dark));
     text-transform: none !important ; 
 }
 

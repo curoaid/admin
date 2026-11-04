@@ -1,6 +1,6 @@
 {
-  "short_name": "CoreUI-React",
-  "name": "CoreUI-React sample",
+  "short_name": "CuroAid",
+  "name": "CuroAid Admin",
   "icons": [
     {
       "src": "./assets/img/favicon.png",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#006D5B",
+  "background_color": "#deebe8"
 }

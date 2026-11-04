@@ -199,7 +199,7 @@ bodyContent={
         <div className={styles.action}  >
 
                 <Switch {...label} color={"error" } checked={row?.is_blocked == 0 ? false : true}  onClick={() => BlockUser(row?.is_blocked == 0 ? 1 : 0 ,row?._id)}   />
-                <BiEdit style={{fontSize:"20px",color:"#006d5b",cursor:"pointer"}} onClick={() => {
+                <BiEdit style={{fontSize:"20px",color:"var(--curoaid-cyan-dark)",cursor:"pointer"}} onClick={() => {
                   setPrefillValues({name:row?.name,price:row?.price,duration:row?.duration,id:row?._id,features:row?.features,package_policy:row?.package_policy,terms:row?.terms})
                   setAddPlan(true)} } />
                 <ImBin style={{fontSize:"20px",color:"#d21313",cursor:"pointer"}} onClick={() => setShowDeletePopup(row?._id)} />

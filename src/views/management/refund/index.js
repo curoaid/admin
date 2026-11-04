@@ -181,8 +181,8 @@ bodyContent={
           {!show  &&  <TableCell  align="center" style={{minWidth:"200px"}}  >
               <div className={styles.action} style={{width:row?.refundStatus ? "70%"  : "100%"}}  >
  
-            {!row?.refundStatus && <AiFillCheckCircle style={{fontSize:"25px",color:"#E4C87F",cursor:"pointer"}} onClick={() => InitiateRefund(row?._id)}  />}
-              <AiFillEye style={{fontSize:"30px",color:"#E4C87F",cursor:"pointer"}} onClick={() => {
+            {!row?.refundStatus && <AiFillCheckCircle style={{fontSize:"25px",color:"var(--curoaid-cyan-dark)",cursor:"pointer"}} onClick={() => InitiateRefund(row?._id)}  />}
+              <AiFillEye style={{fontSize:"30px",color:"var(--curoaid-cyan-dark)",cursor:"pointer"}} onClick={() => {
                 setDetailsPopup(true)
                 setUserDetails(row)
               }} />

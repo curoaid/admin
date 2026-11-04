@@ -175,7 +175,7 @@ function IndividualTable({ currService, searchKey, show }) {
                   <AiFillEye style={{ fontSize: "20px", color: "black", cursor: "pointer" }} onClick={() => navigate(`individual-details/${row?._id}`, { state: { service: "individual", status: row?.status } })} />
                 </div> :
                   <div className={currService == 2 && styles.action}>
-                    <AiFillEye style={{ fontSize: "25px", color: "#E4C87F", cursor: "pointer" }} onClick={() => navigate(`individual-details/${row?._id}`, { state: { service: "individual" } })} />
+                    <AiFillEye style={{ fontSize: "25px", color: "var(--curoaid-cyan-dark)", cursor: "pointer" }} onClick={() => navigate(`individual-details/${row?._id}`, { state: { service: "individual" } })} />
                   </div>
                 }
               </TableCell>
@@ -188,7 +188,7 @@ function IndividualTable({ currService, searchKey, show }) {
                   <ImBin style={{ fontSize: "20px", color: "#d21313", cursor: "pointer" }} onClick={() => setShowDeletePopup(row?._id)} />
                 </div> :
                   <div className={currService == 2 && styles.action}>
-                    <AiFillEye style={{ fontSize: "25px", color: "#E4C87F", cursor: "pointer" }} onClick={() => navigate(`individual-details/${row?._id}`, { state: { service: "individual" } })} />
+                    <AiFillEye style={{ fontSize: "25px", color: "var(--curoaid-cyan-dark)", cursor: "pointer" }} onClick={() => navigate(`individual-details/${row?._id}`, { state: { service: "individual" } })} />
                     <ImBin style={{ fontSize: "20px", color: "#d21313", cursor: "pointer" }} onClick={() => setShowDeletePopup(row?._id)} />
                     {currService != 3 && <Switch {...label} color={"error"} checked={row?.is_blocked == 0 ? false : true} onClick={() => BlockUser(row?.is_blocked == 0 ? 1 : 0, row?._id)} />}
                   </div>

@@ -215,7 +215,7 @@ bodyContent={
 
         { !show  &&   <TableCell  align="center" style={{minWidth:"150px"}}  >
                 <div className={styles.actionCta} > 
-                <BiEdit style={{fontSize:"30px",color:"#006d5b",cursor:"pointer"}} 
+                <BiEdit style={{fontSize:"30px",color:"var(--curoaid-cyan-dark)",cursor:"pointer"}}
                 onClick={() => {
                   setAddSub(true)
                   setPrefillValues({name:row?.name,image:row?.image,description:row?.description,goodPrice:row?.goodPrice,excellentPrice:row?.excellentPrice,averagePrice:row?.averagePrice,id:row?._id,instruction:row?.instruction,

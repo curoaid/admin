@@ -21,7 +21,7 @@
 .ctaBtn{
     margin-top: 20px;
     width: 100%;
-    background: transparent linear-gradient(103deg,#E4C87F 0%,#C19647 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(103deg,var(--curoaid-cyan-dark) 0%,var(--curoaid-green-dark) 100%) 0% 0% no-repeat padding-box;
     font: normal normal normal 14px/21px Poppins;
     padding: 15px 0;
     border: transparent;

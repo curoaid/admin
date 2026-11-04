@@ -37,17 +37,17 @@
 }
 
 .acceptCta{
-    background-image: linear-gradient(to right,#e4c87f,#c19647);
+    background-image: linear-gradient(to right,var(--curoaid-cyan-dark),var(--curoaid-green-dark));
     text-transform: none !important ; 
     
 }
 
 .rejectCta{
     background: #ffffff 0% 0% no-repeat padding-box !important ;
-    border: 1px solid #c19647 !important ;
+    border: 1px solid var(--curoaid-green-dark) !important ;
     text-transform: none !important ;
     border-radius: 7px !important;
-    color: #c19647 !important ;
+    color: var(--curoaid-green-dark) !important ;
 }
 
 .searchInput{

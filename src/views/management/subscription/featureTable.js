@@ -181,7 +181,7 @@ bodyContent={
            
       {show  &&  <TableCell  align="center" style={{width:"140px"}} >
         <div className={styles.action}  >
-        <BiEdit style={{fontSize:"30px",color:"#006d5b",cursor:"pointer"}} 
+        <BiEdit style={{fontSize:"30px",color:"var(--curoaid-cyan-dark)",cursor:"pointer"}}
                 onClick={() => {
                   setFeaturesPopup(row?._id)
                   setFeatureName(row?.name)

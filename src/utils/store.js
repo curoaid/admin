@@ -22,6 +22,7 @@ export const useGlobalStore = create(
       },
 
       setSidebarShow: () => set((state) => ({ sidebarShow: !state.sidebarShow })),
+      setSidebarVisible: (visible) => set({ sidebarShow: visible }),
 //   removeAllBears: () => set({ bears: 0 }),
 }),
 {
@@ -30,5 +31,4 @@ export const useGlobalStore = create(
 }
 )
 )
-
 

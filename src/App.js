@@ -76,7 +76,7 @@ function App() {
                   name="Reset Password"
                   element={<ResetPassword />}
                />
-               <Route path="*" name="Home" element={<DefaultLayout />} />
+               <Route path="/adminpanel/*" name="Home" element={<DefaultLayout />} />
                {/* <Route path="*" name="Dashboard" element={<Dashboard/>} /> */}
             </Routes>
          </Suspense>

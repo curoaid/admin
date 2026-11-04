@@ -493,7 +493,7 @@ const Index = () => {
                                           <BiEdit
                                              style={{
                                                 fontSize: '24px',
-                                                color: '#006d5b',
+                                                color: 'var(--curoaid-cyan-dark)',
                                                 cursor: 'pointer',
                                              }}
                                              onClick={() => {

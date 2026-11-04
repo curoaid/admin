@@ -64,7 +64,7 @@ if(!mailFormat.test(userMail)){
   }
 
   return (
-    <div className="min-vh-100 d-flex flex-row align-items-center" style={{backgroundImage:"linear-gradient(#006D5B,#033639)"}} >
+    <div className="min-vh-100 d-flex flex-row align-items-center auth-page" >
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md={5}>
@@ -102,7 +102,7 @@ if(!mailFormat.test(userMail)){
                         
                       </div>
                       <div className="text-right">
-                        <CButton style={{color:"#006d5b",border:"none",background:"transparent"}} onClick={() =>  navigate("/adminpanel/forgotPassword")} className="px-0">
+                        <CButton style={{color:"var(--curoaid-cyan-dark)",border:"none",background:"transparent"}} onClick={() =>  navigate("/adminpanel/forgotPassword")} className="px-0">
                           Forgot password
                         </CButton>
                       </div>

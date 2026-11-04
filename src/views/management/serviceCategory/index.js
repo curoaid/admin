@@ -252,7 +252,7 @@ function Index({ show }) {
 
                   {!show && <TableCell align="center">
                     <div className={styles.actionCta} >
-                      <BiEdit style={{ fontSize: "30px", color: "#006d5b", cursor: "pointer" }} onClick={() => {
+                      <BiEdit style={{ fontSize: "30px", color: "var(--curoaid-cyan-dark)", cursor: "pointer" }} onClick={() => {
                         setDetailPopup(row?._id)
                         setCategoryName(row?.name)
                         setSelectedImg(row?.image)
