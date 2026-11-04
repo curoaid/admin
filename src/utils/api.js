@@ -16,7 +16,7 @@ var setupAPI = function () {
          // BASE_URL = 'http://192.168.0.109:3001/admin/';
          // BASE_URL = 'http://52.66.187.242:3001/admin/'
          // BASE_URL = 'http://43.204.84.242:3001/admin/'
-         BASE_URL = 'https://api.vathala/admin/'
+         BASE_URL = 'https://api.vathala.com/admin/'
 
          break
       case 'staging':
