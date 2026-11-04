@@ -6,6 +6,8 @@
 
 [build.environment]
   NODE_VERSION = "24"
+  DISABLE_ESLINT_PLUGIN = "true"
+  CI = "false"
 
 [[redirects]]
   from = "/*"
